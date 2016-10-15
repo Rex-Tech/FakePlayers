@@ -2,7 +2,6 @@
 
 namespace FakePlayers;
 
-use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\event\Listener;
@@ -13,7 +12,6 @@ class FakePlayers extends PluginBase implements Listener{
 public function onEnable(){
 $this->getLogger()->notice("FakePlayers plugin made by RexRed");
 $this->getServer()->getPluginManager()->registerEvents($this, $this);
-
 }
 
 public function onQuery(QueryRegenerateEvent $e){
