@@ -1,0 +1,5 @@
+name: FakePlayers
+main: FakePlayers\FakePlayers
+author: RexRed
+version: 1.0.0
+api: [1.12.0]
