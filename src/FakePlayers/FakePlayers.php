@@ -16,7 +16,7 @@ $this->getServer()->getPluginManager()->registerEvents($this, $this);
 
 public function onQuery(QueryRegenerateEvent $e){
 $e->setPlayerCount(mt_rand(5,1000));
-$this->getLogger->notice("Update Player Count~");
+$this->getLogger()->notice("Update Player Count~");
 }
 
 }
