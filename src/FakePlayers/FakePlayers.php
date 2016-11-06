@@ -7,6 +7,7 @@ use pocketmine\Server;
 use pocketmine\event\Listener;
 use pocketmine\event\server\QueryRegenerateEvent;
 
+
 class FakePlayers extends PluginBase implements Listener{
 
 public function onEnable(){
@@ -16,7 +17,8 @@ $this->getServer()->getPluginManager()->registerEvents($this, $this);
 
 public function onQuery(QueryRegenerateEvent $e){
 $e->setPlayerCount(mt_rand(5,1000));
-$this->getLogger()->notice("Update Player Count~");
+$Counte = $e->getPlayerCount();
+$this->getLogger()->notice("Update Player Count~\nNow PlayerCount : $Counte");
 }
 
 }
