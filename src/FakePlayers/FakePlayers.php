@@ -6,6 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\event\Listener;
 use pocketmine\event\server\QueryRegenerateEvent;
+use pocketmine\untils\Config;
 
 
 class FakePlayers extends PluginBase implements Listener{
@@ -13,9 +14,8 @@ class FakePlayers extends PluginBase implements Listener{
 public function onEnable(){
 $this->getLogger()->notice("FakePlayers plugin made by RexRed");
 $this->getServer()->getPluginManager()->registerEvents($this, $this);
-
-        $this->saveDefaultConfig();
-		$this->reloadConfig();
+$this->saveDefaultConfig();
+$this->reloadConfig();
 }
 
 public function onQuery(QueryRegenerateEvent $e){
