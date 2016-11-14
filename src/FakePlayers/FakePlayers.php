@@ -26,4 +26,21 @@ $Count = $e->getPlayerCount();
 $this->getLogger()->notice("Update Player Count~\nNow PlayerCount : $Count");
 }
 
+public function onCommand(CommandSender $sender, Command $cmd, $label, array $arg){
+if (strtolower($cmd–>getName()) == 'smaxc'){
+if (isset($arg[0])){
+$this–>getConfig()–>set('max',"$arg[0]");
+}else{
+$sender–>sendMessage("缺少参数");
+}
+}
+if (strtolower($cmd–>getName()) == 'smimc'){
+if (isset($arg[0])){
+$this–>getConfig()–>set('min',"$arg[0]");
+}else{
+$sender–>sendMessage("缺少参数");
+}
+}
+}
+
 }
