@@ -3,3 +3,12 @@ main: FakePlayers\FakePlayers
 author: RexRed
 version: 1.0.0
 api: [1.12.0]
+commands:
+ smaxc:
+  description: "set max player count"
+  usage: "/smaxc"
+  permission: op
+ sminc:
+  description: "set min player count"
+  usage: "/sminc"
+  permission: op
