@@ -7,7 +7,8 @@ use pocketmine\Server;
 use pocketmine\event\Listener;
 use pocketmine\event\server\QueryRegenerateEvent;
 use pocketmine\untils\Config;
-
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 
 class FakePlayers extends PluginBase implements Listener{
 
