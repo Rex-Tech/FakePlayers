@@ -35,7 +35,7 @@ $this–>getConfig()–>set('max',"$arg[0]");
 $sender–>sendMessage("缺少参数");
 }
 }
-if (strtolower($cmd–>getName()) == 'smimc'){
+if (strtolower($cmd–>getName()) == 'sminc'){
 if (isset($arg[0])){
 $this–>getConfig()–>set('min',"$arg[0]");
 }else{
