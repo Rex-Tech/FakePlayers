@@ -5,9 +5,8 @@ Features:
 - fake players online
 - cool~
 
-Commands:
-| Usage    | Description              | Permission | 
-| -------- |:------------------------:| -----------| 
+| Command  | Description              | Permission | 
+| -------- |--------------------------| -----------| 
 | /setmaxc | Set maximun player count | Op         | 
 | /setminc | Set minimun player count | Op         |
 
