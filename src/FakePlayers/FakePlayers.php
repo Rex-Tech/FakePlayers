@@ -7,7 +7,8 @@ use pocketmine\Server;
 use pocketmine\event\Listener;
 use pocketmine\event\server\QueryRegenerateEvent;
 use pocketmine\untils\Config;
-
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 
 class FakePlayers extends PluginBase implements Listener{
 
@@ -34,7 +35,7 @@ $this–>getConfig()–>set('max',"$arg[0]");
 $sender–>sendMessage("缺少参数");
 }
 }
-if (strtolower($cmd–>getName()) == 'smimc'){
+if (strtolower($cmd–>getName()) == 'sminc'){
 if (isset($arg[0])){
 $this–>getConfig()–>set('min',"$arg[0]");
 }else{
